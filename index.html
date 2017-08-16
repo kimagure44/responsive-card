@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Tarjeta Flexbox</title>
+        <style>
+            body {
+                background-color: #dddddd;
+            }
+            section {
+                max-width: 720px;
+                padding: 1rem;
+                margin: 0 auto;
+                border:1px solid #000000;
+                border-radius: 5px;
+                background: darkkhaki;
+                display: flex;
+                align-items: center;
+            }
+            section img {
+                height: 70px;
+                margin: 1rem;
+                flex: 0 1 90px;
+            }
+            p {
+                margin: 0;
+                text-align: justify;
+            }
+            @media all and (max-width:550px) {
+                section {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ra_Symbol_%28Stargate%29.svg/1200px-Ra_Symbol_%28Stargate%29.svg.png" alt="RA">
+            <p>
+                Cuenta la leyenda que en un principio no había luz. Solo existía la oscuridad y una gran extensión de agua con el nombre de Nun. El poder de Nun era tan grande que desde el interior de la penumbra hizo brotar un huevo grande y brillante flamiante. Y del interior de ese huevo surgió Ra.<br>
+            </p>
+        </section>
+    </body>
+</html>
